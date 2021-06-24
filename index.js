@@ -21,10 +21,8 @@ route.get('/', (req, res) => {
         for(let i = 0; i < 8; i++){
             array[i] = new Array(8);
         }
-
     
-        console.log("Turno: " + (turno === '1' ? "Blanco" : "Negro"));
-        
+        console.log("Turno: " + (turno === '1' ? "Blanco" : "Negro"));        
         //asignacion de la matriz 
         let x = 0;
         let y = 0;
@@ -80,7 +78,7 @@ route.get('/', (req, res) => {
             }
         }        
         console.log("Mejor jugada: ", ultimaCoordenada.getX, ultimaCoordenada.getY)
-        res.send(ultimaCoordenada.getX.toString() + ultimaCoordenada.getY.toString() + "")
+        res.send(String(ultimaCoordenada.getX) + String(ultimaCoordenada.getY));
     }else{
         res.send("Matriz con dimensiones incorrectas.")
     }
