@@ -6,6 +6,7 @@ const route = express.Router();
 const { getCountDown, getCountUp, getCountLeft, getCountRight, getCountDiagonalUpLeft, getCountDiagonalUpRight, getCountDiagonalDownLeft, getCountDiagonalDownRight } = require('./Movements');
 const Coordinates = require('./Coordinates');
 
+app.set('port', process.env.PORT || 3000);
 app.use(route);
 app.use(cors());
 app.use(morgan('dev'));
@@ -85,6 +86,6 @@ route.get('/', (req, res) => {
     }
 });
 
-app.listen(3000, () =>{
+app.listen(app.get('port'), () =>{
     console.log("app running in port 3000")
 });
