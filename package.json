@@ -2,7 +2,7 @@
   "name": "proyecto1_201503911",
   "version": "1.0.0",
   "description": "Proyecto de clase Inteligencia Artificial 1 USAC",
-  "main": "index.js",
+  "main": "index.js", 
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon run index.js",
