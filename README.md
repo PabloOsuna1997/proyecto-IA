@@ -1,2 +1,2 @@
 # proyecto-IA
-proyecto de clase Inteligencia Artificial
+Intelligent agent implementation for search decision making.
